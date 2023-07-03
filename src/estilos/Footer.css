@@ -1,0 +1,27 @@
+footer{
+    background: #222;
+    color: white;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: .8em;
+}
+.contenedor-icon-footer{
+    display: flex;
+    align-items: center;
+}
+@media screen and (min-width:600px){
+    .contenedor-footer{
+        display: flex;
+        width: 100%;
+        gap: 20px;
+    }
+    .contenedor-footer-columna{
+        width: 33%;
+        
+    }
+    .copy{
+       text-align: center;
+    }
+
+}

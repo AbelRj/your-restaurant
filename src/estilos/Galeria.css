@@ -1,0 +1,44 @@
+
+.section-galeria{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: 2px solid peru;
+
+}
+.section-galeria-contenedor{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.galeria-imagen-grande{
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+}
+.galeria-imagen-chica{
+    height: 400px;
+    object-fit: cover;
+}
+.section-galeria-titulo{
+color: black;
+}
+@media screen and (min-width: 500px){
+.section-galeria-contenedor-fila{
+    display: flex;
+    max-width: 1000px;
+}
+.galeria-imagen-grande{
+    width: 600px;
+    height: 200px;
+}
+.galeria-imagen-chica{
+    width: 400px;
+    height: 200px;
+
+}
+}

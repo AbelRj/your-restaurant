@@ -1,0 +1,107 @@
+.section-bienvenido{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.section-bienvenido-info{
+    background: #DE423A;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.section-industria{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.section-industria-info{
+    color: black;
+}
+.section-industria-info-texto{
+margin: 10px;
+}
+.section-industria-info-texto a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    background: #DE423A;
+    color: white;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.section-especialidad-de-hoy{
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.section-especialidad-de-hoy-imagen{
+    width: 100%;
+    height: auto;
+    max-width: 350px; /* Ajusta el tamaño máximo de las imágenes según tus necesidades */
+    max-height: 350px; 
+}
+.section-especialidad-de-hoy-titulo{
+    font-family: 'Pacifico',cursive;
+    text-align: center;
+    font-weight: 100; 
+    font-size: 1.8em;
+    margin: 30px;
+}
+.section-especialidad-de-hoy-platos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.section-especialidad-de-hoy-nombre-de-plato{
+    font-size: 1.3em;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.section-especialidad-de-hoy-precio-de-plato{
+    font-size: 1.5em;
+    color: #DE423A;
+    font-weight: bold;
+}
+
+@media screen and (min-width:480px){
+    .section-industria-info{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .section-industria-info-imagen{
+        width: 50%;
+    }
+    .section-industria-info-texto{
+        width: 50%;
+    }
+    .section-especialidad-de-hoy-imagen{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+    .section-especialidad-de-hoy-platos>div{
+        border: 5px solid #ddd;
+        padding: 5px;
+        gap:20px;
+    }
+
+}
+
+@media screen and (min-width:1024px){
+    .section-bienvenido-info{
+        width: 1000px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+    .section-industria-info{
+        width: 1000px;
+    }
+}
