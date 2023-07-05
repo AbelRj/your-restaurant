@@ -31,11 +31,11 @@ export function Contacto() {
         </LazyLoad>
       )}
 
-      <main>
+      <main className='main-contacto'>
         <section className="section-contactos"> 
           <h2>Contáctenos</h2>
           <div className="section-contactos-contenedor">
-            <div>
+            <div className='section-contactos-contenedor-1'>
               <h3>Información de contacto</h3>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit
@@ -54,33 +54,30 @@ export function Contacto() {
               <p>
                 <span></span>consultas@yourrestaurant.com
               </p>
-              <div>
-                <a href="">
-                  <FacebookIcon/>
+              <div className='contacto-redes-sociales'>
+                <a href="" className='contacto-red-social'>
+                  <FacebookIcon />
                 </a>
-                <a href="">
+                <a href="" className='contacto-red-social'>
                   <TwitterIcon/>
                 </a>
-                <a href="">
+                <a href="" className='contacto-red-social'>
                   <EmailIcon/>
                 </a>
               </div>
             </div>
-            <form>
-              <label>Nombre:</label>
-              <input></input>
-              <label>Correo</label>
-              <input></input>
-              <label>Telefono</label>
-              <input></input>
-              <label>Mensaje</label>
-              <textarea></textarea>
-              <input type="submit" value="enviar" />
-              <input type="submit" />
+            <form className='formulario'>
+              <label className='formulario__label'>Nombre:</label>
+              <input className='formulario__input-txt'/>
+              <label  className='formulario__label'>Correo</label>
+              <input  className='formulario__input-txt'/>
+              <label  className='formulario__label'>Telefono</label>
+              <input className='formulario__input-txt'/>
+              <label  className='formulario__label'>Mensaje</label>
+              <textarea className="formulario__textarea" />
+              <input type="submit" className='formulario__btn' value="enviar" />
             </form>
-            <div>
-              <h2>Comentarios</h2>
-            </div>
+            
           </div>
         </section>
       </main>
